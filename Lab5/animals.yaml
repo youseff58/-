@@ -1,0 +1,10 @@
+path: animals   
+    
+train: images/train
+
+val: images/val
+
+names:
+    0:Cat
+    1:Dog
+    2:Wild

@@ -1,0 +1,15 @@
+yolo predict model=best.pt source="datasets/animals/test/*.jpg" conf=0.25
+
+yolo train model=yolov8s.pt data=animals.yaml workers=0 project=animals epochs=1000 batch=4
+
+
+path: animals   
+    
+train: images/train
+
+val: images/val
+
+names:
+    0:Cat
+    1:Dog
+    2:Wild
